@@ -2,8 +2,10 @@
 <html>
     <head>
     <!-- CSS only -->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -18,15 +20,15 @@
                 <a href="http://www.avc2019.com.br"><img src="back_image.png"></a>
             </div>
             <div class="navbar navbar-collapse" id="nav">
-                <a href="http://0.0.0.0:8000"><p>Voltar ao site</p></a>
+                <a href="http://0.0.0.0:8000"><p>VOLTAR AO SITE</p></a>
             </div>    
         </div>
 
         
         <div class="main">     
             <div class="container-fluid">
-                <h5>Página Inicial >> Grade</h5>
-                <h1>Congresso</h1>
+                <p id="h5">Página Inicial >> Grade</p>
+                <p id="h1">Congresso</p>
                 <hr>
 
             </div>
@@ -50,7 +52,7 @@
                     <tr>
                         <th>08:00</th>
                         <td style="border-color: #FFF; background: linear-gradient(0deg, #598191, rgba(255,255,255,0.5) 180%);" rowspan:1>
-                            <p>08:00 - 08:30</p>
+                            <p  class="time" style="color:black">08:00 - 08:30</p>
                             <p>Credenciamento</p>
                         </td>
                         <td>&nbsp;</td>
@@ -60,47 +62,290 @@
                     <tr>
                         <th>08:30</th>
                         <td style="border-color: #FFF; background-color: rgb(220,220,220)" rowspan="1">
-                            <div>
-                                <div style="float:left">
-                                    <p>08:30 - 09:50</p>
-                                    <p>Mesa Redonda: Reabilitação I</p>
-                                </div>
-                                <div>    
-                                    <a class=speaker href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5081">
-                                        <div class="speaker_box">
-                                            
-                                            <img src=/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5081.jpg class="speaker_pic">
-                                            <div style="float:left">
-                                                <p class="name">Carla Heloisa Cabral Moro</p>
-                                                <p class="address">JOINVILLE / SC</p>
-                                                <p class="occupation">Moderadora</p>
-                                            </div>
-                                        
-                                        </div>
-                                    </a>
-                                </div>
-                                
+                        
+                            <div class="time_theme">
+                                <p class="time">08:30 - 09:50</p>
+                                <p>Mesa Redonda: Reabilitação I</p>
                             </div>
-                            <!-- <div style="clear:both">
-                                
-                                <a href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/7663">
-                                    <div style="margin-top: -45px;">
-                                        <img src=/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_7663.jpg class="speaker_pic">
-                                    </div>
-                                    <div style="display:block; width:100%; padding:0;">
-                                        <p style="font-size:12px; clear:left;;">ANA CRISTINA FERREIRA GARCIA AMORIm</p>
-                                        <p style="font-size:12px; clear:left">GOIÂNIA / GO</p>
-                                        <p>Moderadora</p>
+                            <div>    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5081">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5081.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">CARLA HELOISA CABRAL MORO</p>
+                                            <p class="address">JOINVILLE / SC</p>
+                                            <p class="occupation">Moderadora</p>
+                                        </div>
+                                    
                                     </div>
                                 </a>
-                            </div> -->
+                            </div>
+
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/7663">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_7663.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">ANA CRISTINA FERREIRA GARCIA AMORIM</p>
+                                            <p class="address">GOIÂNIA / GO</p>
+                                            <p class="occupation">Moderadora</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
                             
-                        </td>
-                        
-                        <td>
+                            <div class="time_theme">
+                                <p class="time">08:30 - 08:50</p>
+                                <p class="theme">Reabilitação: Neuroplasticidade</p>
+                            </div>
+                           
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5077">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5077.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">ADRIANO BASTOS CONFORTO</p>
+                                            <p class="address">SÃO PAULO</p>
+                                            <p class="occupation">Palestrante</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="time_theme">
+                                <p class="time">08:50 - 09:10</p>
+                                <p>Desafios da Equipe Multi em Fase Aguda: Neuroplasticidade</p>
+                            </div>
+
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/6215">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_6215.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">MARIA APARECIDA CHAGAS ROCHAS</p>
+                                            <p class="address">EUSEBIO / CE</p>
+                                            <p class="occupation">Palestrante</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="time_theme">
+                                <p class="time">09:10 - 09:30</p>
+                                <p>Desafios na Alta e 6 Meses Subsequentes</p>
+                            </div>
+
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5575">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5575.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">MARIA APARECIDA CHAGAS ROCHAS</p>
+                                            <p class="address">EUSEBIO / CE</p>
+                                            <p class="occupation">Palestrante</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="time_theme">
+                                <p class="time">09:30 - 09:50</p>
+                                <p>Discussão</p>
+                            </div>
 
                         </td>
-                        <td>
+                        
+                        <td style="border-color: #FFF; background-color: rgb(220,220,220)" rowspan="1">
+
+                            <div class="time_theme">
+                                <p class="time">08:30 - 09:50</p>
+                                <p>Mesa Redonda: Miscelânia 1</p>
+                            </div>
+                            <div>    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/7324">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/temas/default/imagens/convidados.png" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">MARCO AURÉLIO FRAGA BORGES</p>
+                                            <p class="address">GOIÂNIA / GO</p>
+                                            <p class="occupation">Moderador</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/7777">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_7777.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">THALITA DAYRELL LEITE QUINAN</p>
+                                            <p class="address">GOIÂNIA / GO</p>
+                                            <p class="occupation">Moderadora</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="time_theme">
+                                <p class="time">08:30 - 08:50</p>
+                                <p class="theme">Investigação Etiológica No AVC Em Jovem</p>
+                            </div>
+                           
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/7769">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_7769.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">ANA CLAUDIA DE SOUZA</p>
+                                            <p class="address">PORTO ALEGRE / AC</p>
+                                            <p class="occupation">Palestrante</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="time_theme">
+                                <p class="time">08:50 - 09:10</p>
+                                <p>AVC E Etiologias Infecto-Parasitárias</p>
+                            </div>
+
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5103">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5103.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">MARCELO CALDERARO</p>
+                                            <p class="address">SÃO PAULO / SP</p>
+                                            <p class="occupation">Palestrante</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="time_theme">
+                                <p class="time">09:10 - 09:30</p>
+                                <p>Endocardite E AVC Agudo</p>
+                            </div>
+
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5418">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5418.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">CLARA MONTEIRO ANTUNES BARREIRA</p>
+                                            <p class="address">GOIANIA / GO</p>
+                                            <p class="occupation">Palestrante</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="time_theme">
+                                <p class="time">09:30 - 09:50</p>
+                                <p>Discussão</p>
+                            </div>
+
+                        </td>
+
+                        <td td style="border-color: #FFF; background-color: rgb(220,220,220)" rowspan="1">
+                            <div class="time_theme">
+                                <p class="time">08:30 - 09:50</p>
+                                <p>Mesa Redonda: AVC Hemorrágico I</p>
+                            </div>
+                            <div>    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5089">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5089.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">FRANCISCO ANTUNES DIAS</p>
+                                            <p class="address">RIBEIRAO PRETO / SP</p>
+                                            <p class="occupation">Moderador</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5111">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5111.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">PEDRO TELLES COUGO PINTO</p>
+                                            <p class="address">RIO DE JANEIRO / RJ</p>
+                                            <p class="occupation">Moderador</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="time_theme">
+                                <p class="time">08:30 - 08:50</p>
+                                <p class="theme">Manejo Clínico: o que realmente importa?</p>
+                            </div>
+                           
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/5080">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_5080.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">BRUNO BACELAR PEDREIRA</p>
+                                            <p class="address">SALVADOR / BA</p>
+                                            <p class="occupation">Palestrante</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="time_theme">
+                                <p class="time">08:50 - 09:10</p>
+                                <p>Marcadores de Neuroimagem de expansão do hematoma</p>
+                            </div>
+
+                            <div style="top:5px;">    
+                                <a class=speaker_link href="https://win.iweventos.com.br/evento/avc2019/programacao/palestrante/3593">
+                                    <div class="speaker_box">
+                                        
+                                        <img src="/home/sacode/websites/schedule/win.iweventos.com.br/upload/perfil/small_3593.jpg" class="speaker_pic">
+                                        <div style="float:left">
+                                            <p class="name">ANDREW DEMCHUK</p>
+                                            <img src="/home/sacode/websites/schedule/win.iweventos.com.br/temas/default/imagens/flags/CANADA.png" class="speaker_pic">
+                                            <p class="occupation">Palestrante</p>
+                                        </div>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="time_theme">
+                                <p class="time">09:30 - 09:50</p>
+                                <p>Discussão</p>
+                            </div>
 
                         </td>
                         <td>
