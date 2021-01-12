@@ -192,6 +192,12 @@ th{
 .amarelo:hover{
 	background-color: rgb(235, 226, 97);
 }
+.verde{
+	background-color: rgb(151, 192, 2);
+}
+.verde:hover{
+	background-color: rgb(131, 172, 2);
+}
 
 p.name{
 	font-size: 11px;
