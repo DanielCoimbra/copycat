@@ -199,6 +199,13 @@ th{
 	background-color: rgb(131, 172, 2);
 }
 
+.verde_claro{
+	background-color: rgb(154, 228, 182);
+}
+.verde_claro:hover{
+	background-color: rgb(134, 208, 162);
+}
+
 p.name{
 	font-size: 11px;
 	line-height: 12px;
