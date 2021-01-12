@@ -9,6 +9,12 @@
 p{
 	word-wrap: break-word;
 }
+p.button{
+	position:relative;
+	right: 10%;
+	white-space: nowrap;
+	margin-right: 10px;
+}
 .header{
 	background: #ffffff url(back-city.jpg);
 	background-size:cover;
@@ -80,6 +86,7 @@ p{
 p.theme{
 	font-size:13px;
 	line-height:15px;
+	font-weight: 700;
 }
 p.time{
 	color:gray;
@@ -89,7 +96,7 @@ p.time{
 .main{
 	position:relative;
 	width: 96%;
-	height: 2000px;
+	height: 10000px;
 	background:#FFFFFF;
 	margin: -20px auto;
 	border-radius: 6px;
@@ -158,12 +165,32 @@ th{
 	width:100%;
 	padding:0;
 	clear: left;
-	background-color: rgb(224, 224, 224);
+	
 }
 .speaker_box:hover{
+	
+	transition: all .4s ease-in-out;
+
+}
+
+.cinza{
+	background-color: rgb(224, 224, 224);
+}
+.cinza:hover{
 	background-color:  rgb(190, 190, 190);
-	transition: .4s;
-	/* box-shadow: 0 0 0 1px rgba(0,0,0,0.2); */
+}
+
+.azul{
+	background-color: rgb(112,135,255);
+}
+.azul:hover{
+	background-color: rgb(100, 113, 255);
+}
+.amarelo{
+	background-color: rgb(255,246,117);
+}
+.amarelo:hover{
+	background-color: rgb(235, 226, 97);
 }
 
 p.name{
@@ -179,7 +206,7 @@ p.address{
 p.occupation{
 	font-size: 11px;
 	line-height: 12px;
-	font-weight: 400;
+	font-weight: 900;
 	margin-bottom: 0;
 }
 
